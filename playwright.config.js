@@ -27,11 +27,13 @@ const config = {
   // reporter: 'html',
   /* Run tests in files in parallel */
   reporter: 'html', 
-
+  
   use: {
      
          browserName : "chromium",
-         headless: true 
+         headless: true ,
+         screenshot: 'on',
+          trace: 'on',
    },
 
 };
