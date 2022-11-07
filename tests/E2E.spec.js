@@ -22,7 +22,7 @@ test.only('9th Playwright test', async ({browser,page})=>
             await products.nth(i).locator("text = Add to Cart").click();
             break;
           }
-    }
+    } //
     await page.locator("//*[contains(text(),'Cart')]").nth(0).click();
     await page.locator("div li").first().waitFor();
     const bool = await page.locator("h3:has-text('IPHONE 13 PRO')").isVisible();
