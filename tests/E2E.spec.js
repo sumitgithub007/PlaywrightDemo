@@ -16,7 +16,7 @@ test.only('9th Playwright test', async ({browser,page})=>
     await page.waitForLoadState('networkidle');
     const count = await products.count();
     for(let i=0;i<count;++i)
-    {
+    {//test
           if(await  products.nth(i).locator("b").textContent()===productName.toLowerCase())
           {
             await products.nth(i).locator("text = Add to Cart").click();
